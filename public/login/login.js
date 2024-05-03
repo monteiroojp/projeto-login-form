@@ -51,7 +51,7 @@ const loginAccount =  async () => {
     
 
         if(response.ok){
-            window.alert('Loging in...')
+            window.location.href = 'https://www.google.com/'
             clearFilds()
         }        
         else{

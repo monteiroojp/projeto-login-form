@@ -54,7 +54,7 @@ const changePassword = async () => {
         console.log(response)
 
         if(response.ok){
-            window.alert("Senha alteradaaaa, ebaaaa")
+            window.location.href = 'http://localhost:5000/login/'
             clearFilds()
         }
         else{

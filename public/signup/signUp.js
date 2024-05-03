@@ -56,7 +56,7 @@ async function saveAccount() {
         console.log(response)
         
         if(response.ok){
-            window.alert('Conta cadastrada')
+            window.location.href = 'http://localhost:5000/login/'
             clearFilds()
         }
         else{
