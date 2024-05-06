@@ -4,7 +4,6 @@ import {singUpContainer, signForm, signEmailInput, signUsernameInput, signPasswo
 //Variables
 const url = 'http://localhost:5000/signup/'
 
-
 //Funções
 const passwordVisibility = () => {
     if(signPasswordInput.type == 'password'){
@@ -35,8 +34,6 @@ const clearError = (error) => {
     clearFilds()
 }
 
-
-
 async function saveAccount() {
     if (signReportValidity()) {
         const account = {
@@ -53,8 +50,6 @@ async function saveAccount() {
             body: JSON.stringify(account)
         })
 
-        console.log(response)
-        
         if(response.ok){
             window.location.href = 'http://localhost:5000/login/'
             clearFilds()

@@ -48,7 +48,6 @@ const loginAccount =  async () => {
             },
             body: JSON.stringify(account)
         })
-    
 
         if(response.ok){
             window.location.href = 'https://www.google.com/'
